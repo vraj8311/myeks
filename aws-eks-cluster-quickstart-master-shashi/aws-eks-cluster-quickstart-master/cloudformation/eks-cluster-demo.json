@@ -53,7 +53,7 @@
 		{
 			"Type": "AWS::EC2::Image::Id",
 			"Description": "AMI id for the node instances.",
-			"Default": "ami-061392db613a6357b"
+			"Default": "ami-0de53d8956e8dcf80"
 		},
 
 		"NodeInstanceType": 
@@ -198,7 +198,7 @@
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": 
 			{
-				"TemplateURL": "https://s3-us-west-2.amazonaws.com/eks-cluster-shashi/eks-role.json",
+				"TemplateURL": "https://s3.amazonaws.com/eksdemotest/eks-role.json",
 				"TimeoutInMinutes": "60",
 				"Parameters": 
 				{
@@ -215,7 +215,7 @@
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": 
 			{
-				"TemplateURL": "https://s3-us-west-2.amazonaws.com/eks-cluster-shashi/eks-vpc.json",
+				"TemplateURL": "https://s3.amazonaws.com/eksdemotest/eks-vpc.json",
 				"TimeoutInMinutes": "60",
 				"Parameters": 
 				{
@@ -247,7 +247,7 @@
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": 
 			{
-				"TemplateURL": "https://s3-us-west-2.amazonaws.com/eks-cluster-shashi/eks-cluster.json",
+				"TemplateURL": "https://s3.amazonaws.com/eksdemotest/eks-cluster.json",
 				"TimeoutInMinutes": "60",
 				"Parameters": 
 				{
